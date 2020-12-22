@@ -1,0 +1,939 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  min-height: 200vh;
+}
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6s;
+  padding:40px 100px;
+  z-index: 100000;
+}
+header.sticky{
+  padding:5px 100px;
+  background:#000;
+}
+header .logo{
+  position: relative;
+  font-weight: 700;
+  color:#fff;
+  text-decoration: none;
+  font-size:2em;
+  text-transform: uppercase;
+  letter-spacing:2px;
+  transition:0.6s;
+}
+header ul{
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li{
+  position:relative;
+  list-style:none;
+}
+header ul li a{
+  position: relative;
+  margin:0 15px;
+  text-decoration: none;
+  color:#fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition:0.6s;
+}
+header ul li a:hover{
+  background-color: rgba(100, 100, 100, 0.5);
+  padding:10px;
+}
+
+.banner{
+position:relative;
+width:100%;
+height:100vh;
+background: url(https://www.teenaagnel.com/wp-content/uploads/2019/12/food-photography-in-dubai.jpg) ;
+background-size:cover;
+}
+.buscar-caja {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-left:5px;
+ transform: translate(-50%, -50%);
+ background: #2f3640;
+ height: 40px;
+ border-radius: 40px;
+ padding: 0px;
+}
+
+.buscar-caja:hover > .buscar-txt {
+ width: 240px;
+ padding: 0 6px;
+}
+
+.buscar-caja:hover > .buscar-btn {
+ background: white;
+ color: black;
+}
+
+.buscar-btn {
+ color: #e84118;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: #2f3640;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+}
+
+.buscar-btn > i {
+ font-size: 30px;
+}
+
+.buscar-txt {
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 5px;
+ color: white;
+ font-size: 16px;
+ transition: 0.4s;
+ line-height: 40px;
+ width: 0px;
+ font-weight: bold;
+}
+ .type h3{
+   margin-left:630px;
+   margin-top:35px;
+   animation:typing 4s steps(22,end) forwards,
+             blink 1s infinite;
+   overflow: hidden;
+   white-space: nowrap;
+   color:#686d76;
+ }
+
+ @keyframes typing {
+   0% { width:0% }
+   100% { width:100% }
+ }
+ @keyframes blink {
+   0%,100% {
+     border-right:2px solid transparent;
+   }
+   50% {
+     border-right:2px solid #222;
+   }
+ }
+ *,*::before,*::after{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+ }
+ body{
+   width:100%;
+   font-family:sans-serif;
+ }
+ ul{
+   list-style:none;
+   margin-right:45px;
+ }
+.ia{
+  position:relative;
+  width:100%;
+  height:600px;
+  overflow:hidden;
+  margin:5px;
+}
+.ia ul{
+  width:100%;
+  height:600px;
+  display:table;
+  table-layout: fixed;
+  margin:45px;
+}
+.ia ul li{
+  width:25%;
+  height:600px;
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  transition: all 500ms ease;
+}
+.ia ul li:nth-child(1){
+  background: url(https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg) no-repeat center center;
+  background-size: cover;
+}
+.ia ul li:nth-child(2){
+  background: url(https://www.readersdigest.ca/wp-content/uploads/2015/11/gourmet-burger-scaled.jpg) no-repeat center center;
+  background-size: cover;
+}
+.ia ul li:nth-child(3){
+  background: url(https://mytastycurry.com/wp-content/uploads/2016/04/spicy-eggplant-taco-delicious-vegetarian-taco-recipe.1024x1024-1-1-500x375.jpg) no-repeat center center;
+  background-size: cover;
+}
+.ia ul li:nth-child(4){
+  background: url(https://www.sbs.com.au/food/sites/sbs.com.au.food/files/owk_3069_chicken_shawarma_horizontal_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.ia ul li:nth-child(5){
+  background: url(https://www.ediblecommunities.com/wp-content/uploads/2013/05/grilled-chicken.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.ia ul:hover li,
+.ia ul:focus-within li{
+  width:8%;
+}
+.ia ul:hover li:hover,
+.ia ul li:focus,
+.ia ul:focus-within li:focus{
+  width:60%;
+  height:600px;
+}
+
+a{text-decoration:none;}
+.tOI{
+    position:relative;
+    width:500px;
+    text-align: center;
+    margin:4px;
+    margin-bottom:45px;
+    overflow:hidden;
+    color:#000;
+  }
+
+.row{
+  display:flex;
+  color:#fff;
+  margin-top:100px;
+}
+.col{
+  cursor: pointer;
+  display:inline-block;
+  font-size: 1rem;
+  font-weight: 200;
+  padding:6em 0;
+  text-align:center;
+  transition:transform.1s ease-in;
+  width:33.3%;
+  z-index:1;
+}
+.col p{
+margin:0 auto;
+width:80%;
+}
+.col:hover{
+  transform:scale(1.3);
+  z-index: 2;
+}
+.col1{
+  background: rgb(255,173,51,8);
+  margin-left: 100px;
+}
+.col2{
+  background:rgb(153,153,255,8)
+}
+.col3{
+  background:rgb(255,179,170,8);
+  margin-right:100px;
+}
+.p{
+  margin-left:25px;
+  margin-top: 80px;
+}
+#space{
+  margin-top: 130px;
+  margin:70px;
+}
+.post{
+  width:50%;
+  float:left;
+  min-height: 400px;
+  display:table;
+  transition:background.4s ease-in-out;
+}
+.post:hover{
+background: #F5F5DC;
+}
+.post.inner{
+  display: table-cell;
+  margin-left: 20px;
+  padding: 0 15%;
+  m
+}
+.post .heading{
+  font-size:40px;
+  font-weight: bold;
+  margin-left:30px;
+  margin-top:40px;
+}
+.date{
+  margin-left:30px;
+  margin-top:20px;
+}
+.post .info.date, .post .info.read_length{
+  display: inline;
+  margin-right: 1em;
+}
+.post.info.date{
+  margin-right: 1em;
+  padding:20px;
+}
+.red{
+ background: #d32626;
+border-left: 6px solid black;
+}
+.yellow{
+  background:#ffe05d;
+  margin-bottom: 170px
+}
+.orange{
+  background: #ff9642;
+  margin-bottom: 170px;
+}
+.blue{
+  background: #28abb9;
+}
+.violet{
+  background: #c060a1;
+  border-left: 6px solid black;
+}
+.green{
+  background: #335d2d;
+}
+.recipe{
+  margin-left: 20px;
+}
+a{text-decoration:none;}
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.textOverImage{background-size:cover!important;}
+}
+.textOverImage{
+    position:relative;
+    width:300px;
+    height:300px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-position:center;
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+    margin-left:170px;
+    margin-top: 60px;
+  }
+
+  .textOverImage:hover{
+    background-size:110%;
+  }
+
+.textOverImage:before{
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  grid-auto-flow:dense;
+  margin:150px;
+  padding:1rem;
+}
+  .box{
+    background-color:#ccc;
+    min-height:150px;
+  }
+  .galery .box:after{
+   display:block;
+   content:'';
+    padding-top: calc(100%/(16/10))
+  }
+  .gallery .box:nth-child(1){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQeg5K6NXAz7YfBxFa0EghZnIx0XAwe1bhQAQ&usqp=CAU);
+  }
+  .gallery .box:nth-child(2){
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS24wvA9ozipJc5-IStQrqZIo_a3urpEZGIGA&usqp=CAU);
+    }
+  .gallery .box:nth-child(3){
+        background-image: url(https://ychef.files.bbci.co.uk/624x351/p07cj8zj.jpg);
+      }
+ .gallery .box:nth-child(4){
+          background-image: url(https://cdn.tasteatlas.com/images/toplistarticles/d0e6a0a79d5f4197a51f4ca065393ffe.jpg?w=600&h=450);
+    }
+   .gallery .box:nth-child(5){
+            background-image: url(https://www.indianhealthyrecipes.com/wp-content/uploads/2018/07/rava-idli-recipe-500x375.jpg);
+      }
+  .gallery .box:nth-child(6){
+              background-image: url(https://i.pinimg.com/236x/54/eb/0b/54eb0bf29c7680f0b150efcef574416b--oil-for-deep-frying-royal-icing-recipes.jpg);
+    }
+    .gallery .box:nth-child(7){
+      background-image:url(https://static.toiimg.com/thumb/50818957.cms?width=680&height=512&imgsize=149986);
+n   }
+    .gallery .box:nth-child(8){
+        background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSz3iM3lEqzhcV5qEuQnI3wNz2r9wT7VYisog&usqp=CAU);
+    }
+    .gallery .box:nth-child(9){
+          background-image:url(https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/0/31/031e1fb4-2e27-576e-9b22-43d9e0ccca4a/5a53aa65cd984.image.jpg?resize=1200%2C779);
+    }
+    .gallery .box:nth-child(10){
+         background-image:url(https://cdn.cnn.com/cnnnext/dam/assets/140430115517-06-comfort-foods.jpg);
+    }
+    .gallery .box:nth-child(11){
+          background-image:url(https://p16-sg-default.akamaized.net/obj/tiktok-obj/1616636701103106.JPEG);
+    }
+    .gallery .box:nth-child(12){
+           background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHsmtMEcN1497pPGuIrlvTwbiS78jhDPT3GA&usqp=CAU);
+    }
+    .gallery .box:nth-child(13){
+         background-image:url(https://i.guim.co.uk/img/media/c4c4f854ac721bc932b9b4463f87cb20451e3c11/0_220_5616_3370/master/5616.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60a375ac2327f5e438b789e0b9cbfa61);
+    }
+    .gallery .box:nth-child(14){
+            background-image:url(https://images.sweetauthoring.com/recipe/194444_977.jpg);
+    }
+    .gallery .box:nth-child(15){
+          background-image:url(https://images.sweetauthoring.com/recipe/280491_977.jpg);
+    }
+    .gallery .box:nth-child(16){
+         background-image:url(https://www.indianhealthyrecipes.com/wp-content/uploads/2012/11/gulab-jamun-1-500x375.jpg);
+    }
+    .gallery .box:nth-child(17){
+          background-image:url(https://c.ndtvimg.com/2019-05/usn4dnv_fried-chicken_625x300_24_May_19.jpg);
+    }
+    .gallery .box:nth-child(18){
+         background-image:url(https://image.freepik.com/free-photo/top-view-assortment-with-chicken-food-salad_23-2148308840.jpg);
+    }
+    .gallery .box:nth-child(19){
+         background-image:url(https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/11/2/0/DV1510H_fried-chicken-recipe-10_s4x3.jpg.rend.hgtvcom.616.462.suffix/1568222255998.jpeg);
+    }
+    .gallery .box:nth-child(20){
+         background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIZOjwD1xQDFXR3cycd_JVeT63jX3hgnIJFQ&usqp=CAU);
+    }
+    .gallery .box:nth-child(21){
+      background-image:url(https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/209757.jpg);
+   }
+   @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
+   @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+   @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+   body{background-color:#eee;}
+
+   #generic_price_table{
+   	background-color: #f0eded;
+   }
+
+   /*PRICE COLOR CODE START*/
+   #generic_price_table .generic_content{
+   	background-color: #fff;
+   }
+
+   #generic_price_table .generic_content .generic_head_price{
+   	background-color: #f6f6f6;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
+   	border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
+   	color: #525252;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
+       color: #414141;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
+       color: #414141;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
+       color: #414141;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
+       color: #414141;
+   }
+
+   #generic_price_table .generic_content .generic_feature_list ul li{
+   	color: #a7a7a7;
+   }
+
+   #generic_price_table .generic_content .generic_feature_list ul li span{
+   	color: #414141;
+   }
+   #generic_price_table .generic_content .generic_feature_list ul li:hover{
+   	background-color: #E4E4E4;
+   	border-left: 5px solid #2ECC71;
+   }
+
+   #generic_price_table .generic_content .generic_price_btn a{
+   	border: 1px solid #2ECC71;
+       color: #2ECC71;
+   }
+
+   #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
+   #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
+   	border-color: #2ECC71 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #2ECC71;
+   	color: #fff;
+   }
+
+   #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
+   #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span{
+   	color: #fff;
+   }
+
+   #generic_price_table .generic_content:hover .generic_price_btn a,
+   #generic_price_table .generic_content.active .generic_price_btn a{
+   	background-color: #2ECC71;
+   	color: #fff;
+   }
+   #generic_price_table{
+   	margin: 50px 0 50px 0;
+       font-family: 'Raleway', sans-serif;
+   }
+   .row .table{
+       padding: 28px 0;
+   }
+
+   /*PRICE BODY CODE START*/
+
+   #generic_price_table .generic_content{
+   	overflow: hidden;
+   	position: relative;
+   	text-align: center;
+   }
+
+   #generic_price_table .generic_content .generic_head_price {
+   	margin: 0 0 20px 0;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_head_content{
+   	margin: 0 0 50px 0;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
+       border-style: solid;
+       border-width: 90px 1411px 23px 399px;
+   	position: absolute;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_head_content .head{
+   	padding-top: 40px;
+   	position: relative;
+   	z-index: 1;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
+       font-family: "Raleway",sans-serif;
+       font-size: 28px;
+       font-weight: 400;
+       letter-spacing: 2px;
+       margin: 0;
+       padding: 0;
+       text-transform: uppercase;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag{
+   	padding: 0 0 20px;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .price{
+   	display: block;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
+       display: inline-block;
+       font-family: "Lato",sans-serif;
+       font-size: 28px;
+       font-weight: 400;
+       vertical-align: middle;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
+       font-family: "Lato",sans-serif;
+       font-size: 60px;
+       font-weight: 300;
+       letter-spacing: -2px;
+       line-height: 60px;
+       padding: 0;
+       vertical-align: middle;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
+       display: inline-block;
+       font-family: "Lato",sans-serif;
+       font-size: 24px;
+       font-weight: 400;
+       vertical-align: bottom;
+   }
+
+   #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
+       font-family: "Lato",sans-serif;
+       font-size: 18px;
+       font-weight: 400;
+       letter-spacing: 3px;
+       vertical-align: bottom;
+   }
+
+   #generic_price_table .generic_content .generic_feature_list ul{
+   	list-style: none;
+   	padding: 0;
+   	margin: 0;
+   }
+
+   #generic_price_table .generic_content .generic_feature_list ul li{
+   	font-family: "Lato",sans-serif;
+   	font-size: 18px;
+   	padding: 15px 0;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table .generic_content .generic_feature_list ul li:hover{
+   	transition: all 0.3s ease-in-out 0s;
+   	-moz-transition: all 0.3s ease-in-out 0s;
+   	-ms-transition: all 0.3s ease-in-out 0s;
+   	-o-transition: all 0.3s ease-in-out 0s;
+   	-webkit-transition: all 0.3s ease-in-out 0s;
+
+   }
+   #generic_price_table .generic_content .generic_feature_list ul li .fa{
+   	padding: 0 10px;
+   }
+   #generic_price_table .generic_content .generic_price_btn{
+   	margin: 20px 0 32px;
+   }
+
+   #generic_price_table .generic_content .generic_price_btn a{
+       border-radius: 50px;
+   	-moz-border-radius: 50px;
+   	-ms-border-radius: 50px;
+   	-o-border-radius: 50px;
+   	-webkit-border-radius: 50px;
+       display: inline-block;
+       font-family: "Lato",sans-serif;
+       font-size: 18px;
+       outline: medium none;
+       padding: 12px 30px;
+       text-decoration: none;
+       text-transform: uppercase;
+   }
+
+   #generic_price_table .generic_content,
+   #generic_price_table .generic_content:hover,
+   #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg,
+   #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg,
+   #generic_price_table .generic_content .generic_head_price .generic_head_content .head h2,
+   #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head h2,
+   #generic_price_table .generic_content .price,
+   #generic_price_table .generic_content:hover .price,
+   #generic_price_table .generic_content .generic_price_btn a,
+   #generic_price_table .generic_content:hover .generic_price_btn a{
+   	transition: all 0.3s ease-in-out 0s;
+   	-moz-transition: all 0.3s ease-in-out 0s;
+   	-ms-transition: all 0.3s ease-in-out 0s;
+   	-o-transition: all 0.3s ease-in-out 0s;
+   	-webkit-transition: all 0.3s ease-in-out 0s;
+   }
+   @media (max-width: 320px) {
+   }
+
+   @media (max-width: 767px) {
+   	#generic_price_table .generic_content{
+   		margin-bottom:75px;
+   	}
+   }
+   @media (min-width: 768px) and (max-width: 991px) {
+   	#generic_price_table .col-md-3{
+   		float:left;
+   		width:50%;
+   	}
+
+   	#generic_price_table .col-md-4{
+   		float:left;
+   		width:50%;
+   	}
+
+   	#generic_price_table .generic_content{
+   		margin-bottom:75px;
+   	}
+   }
+   @media (min-width: 992px) and (max-width: 1199px) {
+   }
+   @media (min-width: 1200px) {
+   }
+   #generic_price_table_home{
+   	 font-family: 'Raleway', sans-serif;
+   }
+
+   .text-center h1,
+   .text-center h1 a{
+   	color: #7885CB;
+   	font-size: 30px;
+   	font-weight: 300;
+   	text-decoration: none;
+   }
+   .demo-pic{
+   	margin: 0 auto;
+   }
+   .demo-pic:hover{
+   	opacity: 0.7;
+   }
+
+   #generic_price_table_home ul{
+   	margin: 0 auto;
+   	padding: 0;
+   	list-style: none;
+   	display: table;
+   }
+   #generic_price_table_home li{
+   	float: left;
+   }
+   #generic_price_table_home li + li{
+   	margin-left: 10px;
+   	padding-bottom: 10px;
+   }
+   #generic_price_table_home li a{
+   	display: block;
+   	width: 50px;
+   	height: 50px;
+   	font-size: 0px;
+   }
+   #generic_price_table_home .blue{
+   	background: #3498DB;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table_home .emerald{
+   	background: #2ECC71;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table_home .grey{
+   	background: #7F8C8D;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table_home .midnight{
+   	background: #34495E;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table_home .orange{
+   	background: #E67E22;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table_home .purple{
+   	background: #9B59B6;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table_home .red{
+   	background: #E74C3C;
+   	transition:all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table_home .turquoise{
+   	background: #1ABC9C;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+
+   #generic_price_table_home .blue:hover,
+   #generic_price_table_home .emerald:hover,
+   #generic_price_table_home .grey:hover,
+   #generic_price_table_home .midnight:hover,
+   #generic_price_table_home .orange:hover,
+   #generic_price_table_home .purple:hover,
+   #generic_price_table_home .red:hover,
+   #generic_price_table_home .turquoise:hover{
+   	border-bottom-left-radius: 50px;
+       border-bottom-right-radius: 50px;
+       border-top-left-radius: 50px;
+       border-top-right-radius: 50px;
+   	transition: all 0.3s ease-in-out 0s;
+   }
+   #generic_price_table_home .divider{
+   	border-bottom: 1px solid #ddd;
+   	margin-bottom: 20px;
+   	padding: 20px;
+   }
+   #generic_price_table_home .divider span{
+   	width: 100%;
+   	display: table;
+   	height: 2px;
+   	background: #ddd;
+   	margin: 50px auto;
+   	line-height: 2px;
+   }
+   #generic_price_table_home .itemname{
+   	text-align: center;
+   	font-size: 50px ;
+   	padding: 50px 0 20px ;
+   	border-bottom: 1px solid #ddd;
+   	margin-bottom: 40px;
+   	text-decoration: none;
+       font-weight: 300;
+   }
+   #generic_price_table_home .itemnametext{
+       text-align: center;
+       font-size: 20px;
+       padding-top: 5px;
+       text-transform: uppercase;
+       display: inline-block;
+   }
+   #generic_price_table_home .footer{
+   	padding:40px 0;
+   }
+
+   .price-heading{
+       text-align: center;
+   }
+   .price-heading h1{
+   	color: #666;
+   	margin: 0;
+   	padding: 0 0 50px 0;
+   }
+   .demo-button {
+       background-color: #333333;
+       color: #ffffff;
+       display: table;
+       font-size: 20px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 20px;
+       margin-bottom: 50px;
+       outline-color: -moz-use-text-color;
+       outline-style: none;
+       outline-width: medium ;
+       padding: 10px;
+       text-align: center;
+       text-transform: uppercase;
+   }
+   .bottom_btn{
+   	background-color: #333333;
+       color: #ffffff;
+       display: table;
+       font-size: 28px;
+       margin: 60px auto 20px;
+       padding: 10px 25px;
+       text-align: center;
+       text-transform: uppercase;
+   }
+   .demo-button:hover{
+   	background-color: #666;
+   	color: #FFF;
+   	text-decoration:none;
+
+   }
+   .bottom_btn:hover{
+   	background-color: #666;
+   	color: #FFF;
+   	text-decoration:none;
+   }
+   .footer {
+      position:relative;
+      left: 0;
+      width:100%;
+      bottom:-75px;
+      width: 100%;
+      background-color:black;
+      color: white;
+      height:50px;
+      text-align: center;
+      margin-bottom:none;
+
+    }
+
+.social ul{
+  position: relative;
+  top:50%;
+  left:50%;
+  padding:5px;
+  margin:0;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.social ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+.social ul li .fa{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .6s;
+  color:#fff;
+}
+
+.social ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+
+}
+.social ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social ul li:nth-child(3) a:hover {
+    background-color:	#FF0000;
+}
+.social ul li:nth-child(4) a:hover {
+    background-color: #e4405f;
+}
